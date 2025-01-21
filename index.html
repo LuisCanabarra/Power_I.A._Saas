@@ -1,108 +1,189 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenvoice Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background-color: #f5f7fa;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .reviews {
+            margin-top: 20px;
+        }
+        .reviews span {
+            font-size: 1.5rem;
+            color: #ffc107;
+        }
+        .reviews p {
+            margin: 5px 0 0;
+        }
+        .why-zenvoice {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .why-zenvoice h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .why-zenvoice p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        .features {
+            padding: 50px 20px;
+            background-color: #f9fafc;
+        }
+        .features h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .features .feature-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .features .feature-item {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+        .pricing {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .pricing h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .pricing-plan {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .pricing-plan h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .pricing-plan p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <h1>Focus on your startup, not the invoices</h1>
-            <p>Let your customers generate, edit, and download Stripe invoices, so you don't have to.</p>
-            <button class="btn-primary">Get Zenvoice</button>
-            <div class="reviews">
-                <span>⭐⭐⭐⭐⭐</span>
-                <p>1211 founders sleep better</p>
-            </div>
+        <h1>Focus on your startup, not the invoices</h1>
+        <p>Let your customers generate, edit, and download Stripe invoices, so you don't have to.</p>
+        <button class="btn-primary">Get Zenvoice</button>
+        <div class="reviews">
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>1211 founders sleep better</p>
         </div>
     </header>
 
     <!-- Why Zenvoice Section -->
     <section class="why-zenvoice">
-        <div class="container">
-            <h2>Need an easy Stripe invoice?</h2>
-            <p>With Zenvoice, you can simplify how you handle invoices:</p>
-            <ul>
-                <li>✅ Generate invoices in 1 minute</li>
-                <li>✅ Save on Stripe invoice fees</li>
-                <li>✅ Reduce support headaches</li>
-            </ul>
-        </div>
+        <h2>Need an easy Stripe invoice?</h2>
+        <p>With Zenvoice, you can simplify how you handle invoices:</p>
+        <ul>
+            <li>✅ Generate invoices in 1 minute</li>
+            <li>✅ Save on Stripe invoice fees</li>
+            <li>✅ Reduce support headaches</li>
+        </ul>
     </section>
 
     <!-- Features Section -->
     <section class="features">
-        <div class="container">
-            <h2>Features that make a difference</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <h3>Simple Setup</h3>
-                    <p>1-minute no-code setup means you can get started quickly.</p>
-                </div>
-                <div class="feature">
-                    <h3>Save Money</h3>
-                    <p>Eliminate unnecessary Stripe invoice fees with ease.</p>
-                </div>
-                <div class="feature">
-                    <h3>Customer Support</h3>
-                    <p>Reduce customer support time and improve satisfaction.</p>
-                </div>
+        <h2>Features that make a difference</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Simple Setup</h3>
+                <p>1-minute no-code setup means you can get started quickly.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Save Money</h3>
+                <p>Eliminate unnecessary Stripe invoice fees with ease.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Customer Support</h3>
+                <p>Reduce customer support time and improve satisfaction.</p>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
     <section class="pricing">
-        <div class="container">
-            <h2>Simple, transparent pricing</h2>
-            <div class="pricing-grid">
-                <div class="pricing-plan">
-                    <h3>Basic</h3>
-                    <p>$9/month</p>
-                    <ul>
-                        <li>✔ Unlimited invoices</li>
-                        <li>✔ Email support</li>
-                        <li>✔ Access to templates</li>
-                    </ul>
-                    <button class="btn-primary">Choose Basic</button>
-                </div>
-                <div class="pricing-plan">
-                    <h3>Pro</h3>
-                    <p>$19/month</p>
-                    <ul>
-                        <li>✔ All features of Basic</li>
-                        <li>✔ Priority support</li>
-                        <li>✔ Advanced analytics</li>
-                    </ul>
-                    <button class="btn-primary">Choose Pro</button>
-                </div>
+        <h2>Simple, transparent pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-plan">
+                <h3>Basic</h3>
+                <p>$9/month</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What our customers say</h2>
-            <div class="testimonial">
-                <p>"Zenvoice saved me hours of work each month! Highly recommend it for startups."</p>
-                <h3>- John Doe</h3>
-            </div>
-            <div class="testimonial">
-                <p>"The customer support and ease of use are unmatched. Perfect for my needs."</p>
-                <h3>- Jane Smith</h3>
+            <div class="pricing-plan">
+                <h3>Pro</h3>
+                <p>$19/month</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Zenvoice. All rights reserved.</p>
-        </div>
+        <p>© 2025 Zenvoice Clone. All rights reserved. <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
