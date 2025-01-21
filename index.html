@@ -1,90 +1,95 @@
 
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexão AI - Login</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            width: 300px;
-            background: #121212;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        .container h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexão AI - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      width: 300px;
+      text-align: center;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 100px;
+    }
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .links {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .links a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Conexão AI</h1>
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Seu e-mail" required />
-            <input type="password" id="password" placeholder="Sua senha" required />
-            <button type="submit">Entrar</button>
-        </form>
-        <a href="#" id="signupLink">Não tem conta? Inscrever-se</a>
+  <div class="login-container">
+    <!-- Logotipo -->
+    <div class="logo">
+      <img src="https://via.placeholder.com/100" alt="Logo">
     </div>
-    <script>
-        // Redirecionamento após login
-        document.getElementById("loginForm").addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
-
-            // Verifica no Google Sheets (integração será mostrada no próximo passo)
-            const response = await fetch("YOUR_GOOGLE_SHEET_API_ENDPOINT", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email, password }),
-            });
-            const result = await response.json();
-
-            if (result.success) {
-                alert("Login realizado com sucesso!");
-                window.location.href = "dashboard.html"; // Redireciona para o Dashboard
-            } else {
-                alert("Email ou senha incorretos.");
-            }
-        });
-    </script>
+    <!-- Título -->
+    <h1>Conexão AI</h1>
+    <p>Bem-vindo!</p>
+    <!-- Campos de login -->
+    <form id="login-form">
+      <input type="email" placeholder="Seu e-mail" required>
+      <input type="password" placeholder="Sua senha" required>
+      <button type="button" id="login-btn">Entrar</button>
+    </form>
+    <!-- Links adicionais -->
+    <div class="links">
+      <a href="#">Esqueceu sua senha?</a><br>
+      <a href="#">Não tem conta? Inscrever-se</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById("login-btn").addEventListener("click", function () {
+      // Redirecionar para a dashboard
+      window.location.href = "dashboard.html";
+    });
+  </script>
 </body>
 </html>
