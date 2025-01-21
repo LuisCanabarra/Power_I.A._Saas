@@ -1,134 +1,126 @@
-/* Estilo geral */
+/* Estilos gerais */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #f6fcf8;
+    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.hero {
+/* Header */
+.header {
+    background-color: #e8f7f5;
     text-align: center;
     padding: 60px 20px;
-    background: radial-gradient(circle, rgba(238,250,238,1) 0%, rgba(235,245,235,1) 100%);
 }
 
-.hero h1 {
-    font-size: 3em;
-    line-height: 1.2;
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00796b;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin: 20px 0;
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-.hero ul {
-    list-style: none;
-    padding: 0;
-    font-size: 1.1em;
-    margin: 20px 0;
-}
-
-.hero ul li {
-    margin: 10px 0;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+.btn-primary {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.cta-button:hover {
-    background-color: #218838;
+.btn-primary:hover {
+    background-color: #005a4c;
 }
 
-.features, .pricing, .faq {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.features h2, .pricing h2, .faq h2 {
-    font-size: 2em;
-}
-
-.pricing-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.reviews {
     margin-top: 20px;
+    font-size: 1rem;
 }
 
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
+/* Why Zenvoice Section */
+.why-zenvoice {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.why-zenvoice h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+/* Features Section */
+.features {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #ffffff;
     border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1;
+    text-align: center;
 }
 
-.card h3 {
-    font-size: 1.5em;
-    color: #28a745;
+/* Pricing Section */
+.pricing {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.card ul {
-    list-style: none;
-    padding: 0;
+.pricing-grid {
+    display: flex;
+    gap: 20px;
 }
 
-.card ul li {
-    margin: 10px 0;
+.pricing-plan {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
 }
 
-footer {
+/* Testimonials Section */
+.testimonials {
+    background-color: #e8f7f5;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 20px;
-    background-color: #fff;
-    border-top: 1px solid #e0e0e0;
-    font-size: 0.9em;
-    color: #777;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-
-    .pricing-cards {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
