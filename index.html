@@ -2,18 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power I.A.</title>
+    <title>Zenvoice Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* CSS começa aqui */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             color: #333;
             background-color: #f6fcf8;
-            text-align: center;
         }
 
-        .navbar {
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -22,27 +22,20 @@
             border-bottom: 1px solid #e0e0e0;
         }
 
-        .navbar .logo {
+        .logo {
             font-size: 24px;
             font-weight: bold;
         }
 
-        .navbar nav a {
+        nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #333;
             font-size: 16px;
         }
 
-        .navbar .login-button {
-            padding: 10px 20px;
-            background-color: white;
-            border: 1px solid #333;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
         .hero {
+            text-align: center;
             padding: 60px 20px;
             background: radial-gradient(circle, rgba(238,250,238,1) 0%, rgba(235,245,235,1) 100%);
         }
@@ -55,17 +48,6 @@
         .hero p {
             font-size: 1.2em;
             margin: 20px 0;
-        }
-
-        .hero ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1em;
-            line-height: 1.5;
-        }
-
-        .hero ul li {
-            margin: 10px 0;
         }
 
         .cta-button {
@@ -83,40 +65,71 @@
             background-color: #218838;
         }
 
-        footer {
-            margin-top: 40px;
-            font-size: 1em;
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2em;
+        }
+
+        .features p {
+            font-size: 1.1em;
             color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        footer p {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .cta-button {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="logo">Power I.A.</div>
-            <nav>
-                <a href="#pricing">Preço</a>
-                <a href="#faq">FAQ</a>
-                <button class="login-button">Login</button>
-            </nav>
-        </div>
+        <div class="logo">Zenvoice</div>
+        <nav>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <a href="#login">Login</a>
+        </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <h1>A sua empresa conectada,<br>a Inteligência Artificial</h1>
-            <p>em 5 Minutos sem complicação.</p>
-            <ul>
-                <li>1-minute no-code setup</li>
-                <li>Reduce customer support</li>
-                <li>No 0.4% Stripe invoice fee</li>
-            </ul>
+        <section class="hero">
+            <h1>Focus on your startup,<br>not the invoices</h1>
+            <p>Let your customers generate, edit, and download Stripe invoices, so you don’t have to.</p>
             <a href="#get-started" class="cta-button">Get Zenvoice</a>
-        </div>
+        </section>
+
+        <section class="features">
+            <h2>Need an easy Stripe Invoice?</h2>
+            <p>Our system is built to simplify your process and save you time.</p>
+        </section>
     </main>
 
     <footer>
-        <p>⭐ 1211 founders sleep better</p>
+        <p>⭐ Trusted by 1211 founders globally</p>
     </footer>
 </body>
 </html>
+
