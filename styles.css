@@ -1,126 +1,28 @@
-/* Estilos gerais */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenvoice Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Focus on your startup, not the invoices</h1>
+            <p>Let your customers generate, edit, and download Stripe invoices, so you don't have to.</p>
+            <button class="btn-primary">Get Zenvoice</button>
+            <div class="reviews">
+                <span>⭐⭐⭐⭐⭐</span>
+                <p>1211 founders sleep better</p>
+            </div>
+        </div>
+    </header>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <!-- Why Zenvoice Section -->
+    <section class="why-zenvoice">
+        <div class="container">
+            <h2>Need an easy Stripe invoice?</h2>
+            <p>With Zenvoice, you can
 
-/* Header */
-.header {
-    background-color: #e8f7f5;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #00796b;
-}
-
-.header p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    background-color: #00796b;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: #005a4c;
-}
-
-.reviews {
-    margin-top: 20px;
-    font-size: 1rem;
-}
-
-/* Why Zenvoice Section */
-.why-zenvoice {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.why-zenvoice h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #00796b;
-}
-
-/* Features Section */
-.features {
-    background-color: #f5f5f5;
-    padding: 50px 20px;
-}
-
-.feature-grid {
-    display: flex;
-    gap: 20px;
-}
-
-.feature {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-    text-align: center;
-}
-
-/* Pricing Section */
-.pricing {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.pricing-grid {
-    display: flex;
-    gap: 20px;
-}
-
-.pricing-plan {
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-    text-align: center;
-}
-
-/* Testimonials Section */
-.testimonials {
-    background-color: #e8f7f5;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.testimonial {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
