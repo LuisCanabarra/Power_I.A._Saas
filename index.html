@@ -1,97 +1,53 @@
 
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PowerAI - Login</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .login-container {
-      width: 300px;
-      text-align: center;
-      background-color: #111;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    }
-    .logo {
-      margin-bottom: 20px;
-    }
-    .logo img {
-      width: 100px;
-    }
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .links {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-    .links a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instaglam.ai - Seu Gerador de Fotos com IA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container">
-    <!-- Logotipo -->
-    <div class="Screenshot_2025-01-21-13-39-51-048">
-      <img src="Screenshot_2025-01-21-13-39-51-048.png" alt="Screenshot_2025-01-21-13-39-51-048">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">instaglam.ai</a>
+            </div>
+            <nav>
+                <a href="#">Login</a>
+            </nav>
+        </div>
+    </header>
 
-
-    </div>
-    <!-- Título -->
-    <h1>Power AI</h1>
-    <p>Sua empresa conectada a Inteligência Artificial em 5 Minutos.</p>
-    <!-- Campos de login -->
-    <form id="login-form">
-      <input type="email" placeholder="Seu e-mail" required>
-      <input type="password" placeholder="Sua senha" required>
-      <button type="button" id="login-btn">Entrar</button>
-    </form>
-    <!-- Links adicionais -->
-    <div class="links">
-      <a href="#">Esqueceu sua senha?</a><br>
-      <a href="#">Não tem conta? Inscrever-se</a>
-    </div>
-  </div>
-  <script>
-    document.getElementById("login-btn").addEventListener("click", function () {
-      // Redirecionar para a dashboard
-      window.location.href = "dashboard.html";
-    });
-  </script>
+    <section class="hero">
+        <div class="container">
+          
+            <div class="hero-content">
+                <img src="star.png" alt="Logo com estrelas">
+               
+                <h1>Fotos com qualidade de estúdio <br><span>sem sair de casa</span></h1>
+                
+                <p>Obtenha suas fotos com IA que parecem caras. *Não é necessário fotógrafo de R$100/hr</p>
+                <a href="#" class="button">CRIE SUAS FOTOS →</a>
+               
+             </div>
+              <div class="feedback-bar">
+                  <div class="ratings-container">
+                    
+                         <img src="perfil.png" alt="foto de perfil" class="perfil" />
+                         <img src="perfil.png" alt="foto de perfil" class="perfil" />
+                         <img src="perfil.png" alt="foto de perfil" class="perfil" />
+                         <img src="perfil.png" alt="foto de perfil" class="perfil" />
+                    
+                  </div>
+                <p>99% de clientes nos recomendam</p>
+                <p>Com a confiança de 1000+ clientes satisfeitos</p>
+            </div>
+        </div>
+        <div class="discount">
+            <p>OFERTA DE DESCONTO DE $30 TERMINA EM: <span id="countdown">00:00:00</span></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
+
